@@ -1,7 +1,9 @@
 # Project-web-samlip 2025/04/21 ~ing
 ## 삼립 프로젝트 파일/폴더 구성
+* `./styles/common.css` header,footer 공통 CSS
 * `./index.html` 첫번째 메인 HTML - `./images/*(이미지에있는 모든 파일 이라는 뜻)`, `./styles/index.css`, `./styles/reset.css`
-*
+* `./company.html` COMPANY/경영이념 - `./images/company/*`, `./styles/company.css`
+
 ## pretendard 링크 
 * `<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />`
 ## Noto Sans KR 링크

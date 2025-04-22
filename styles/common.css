@@ -1,0 +1,63 @@
+/* index, 모든 sub 적용 할 공통 header, footer common.css */
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a{}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav .gnb {}
+#wrap header nav .gnb li {}
+#wrap header nav .gnb li a {
+    /* font-family: 'pretendard', sans-serif;  `reset.css`에 설정했음, 필요없는 부분*/
+    font-weight: 600;
+    font-size: 1.125rem;
+    /* line-height:1; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
+    /* letter-spacing: -0.02rem; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
+    /* text-align: left; `reset.css`에  초기값설정했음, 필요없는 부분으로 생략 */
+    /* color: #000; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
+}
+#wrap header .right_menu {}
+#wrap header .right_menu li {}
+#wrap header .right_menu li a {
+    font-size:0.75rem;
+    letter-spacing: 0;
+}
+#wrap header .right_menu li a img {}
+/* ====================================================footer */
+#wrap footer {}
+#wrap footer #top {}
+#wrap footer #top .left {}
+#wrap footer #top .left a {}
+#wrap footer #top .left a:nth-child(1) {
+    font-weight: 600;
+    color:#138fbf;
+}
+#wrap footer #top .left a:nth-child(2) {
+    font-weight: 600;
+    color:#da2128;
+}
+#wrap footer #top .left a img {}
+#wrap footer #top .right {}
+/* footer 패밀리사이트+사이트맵 공통 */
+#wrap footer .top .right .site {
+    font-size:0.75rem;
+    border:1px solid #eee;
+    padding:7px 10px;
+}
+/* footer 패밀리사이트+사이트맵 공통 */
+#wrap footer #top .right select {}
+#wrap footer #top .right select option {}
+#wrap footer #top .right .site map  {}
+#wrap footer #top .right .site map span {}
+#wrap footer #top .right .site map img {}
+#wrap footer #bottom * {}
+#wrap footer #bottom address {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color:#808080;
+}
+#wrap footer #bottom p {
+    /* font-size: 0.875rem;
+    line-height: 1.5;
+    color:#808080; */
+}
