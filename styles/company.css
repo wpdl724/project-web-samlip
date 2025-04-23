@@ -1,0 +1,113 @@
+/* company.css */
+#wrap main {
+    text-align: center;
+    /* 부모선택자에서 상속시킨 속성이 자식, 자손에 들어있지 않을 경우는 그대로 상속되고 자식, 자손에 동일한 속성이 있다면 상속을 무시하고 자기 자신에 들어있는 속성값만 인식한다. */
+}
+#wrap main .path {
+    background-color: #fcfcfc;
+    padding: 12px 60px 12px 0;
+    text-align: right;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    /* 모바일~태블릿까지 반응하는 반응형 웹 제작이 아닌 pc에만 적응하는 웹을 제작하는 경우는 너비값을 pc의 표준값인 1920px에 맞춰서 피그마와 포토샵을 디자인한다. 디자인 후 CSS 작업을 진행시에는 1920px을 입력하지 않고 입력하는 선택자 요소의 특징이 블록인지 인라인인지 구분하고 블록이라면 너비가 기본 100%설정이기 때문에 pc의 w100%를 채운다 이해하고 따로 너비값을 입력하지 않는다. 높이도 마찬가지(피그마의 Hug는 기본값 내용에 맞추기와 뜻이 같다 */
+}
+#wrap main .path a {}
+#wrap main .path img {}
+#wrap main .path em {}
+#wrap main h1 {
+    margin: 80px 0 20px 0; 
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+#wrap main > p {
+    margin: 0 0 80px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+#wrap main .bg {
+    background-color: #fcfcfc;
+    padding: 80px 0;
+}
+#wrap main .bg h2 {
+    border-top: 1px solid #f1f1f1;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1.125rem;
+    font-size: 600;
+    line-height: 1.5;
+    color:#36B4E5;
+    /* HTML 작성시 영어는 소문자로 표시하고 CSS로 클라이언트의 요청사항에 따라 대소문자를 디자인 해야한다. */
+    text-transform: uppercase;
+}
+#wrap main .bg p {
+    margin-bottom: 40px;
+    font-size: 1.125;
+    line-height: 1.5;
+}
+#wrap main .bg h2+p {
+    font-size: 2.125rem;
+    font-weight: 500;
+}
+#wrap main .bg .goal_contents {
+    margin-bottom: 40px;
+}
+#wrap main .bg .goal_contents li {
+    width: 250px; height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: -20px;
+    /* box-shadow:x값 y값 blur값 색상 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding-top: 77px;
+}
+#wrap main .bg .goal_contents li:nth-child(1){
+background-color: #36B4E5;
+color:#fff;
+}
+#wrap main .bg .goal_contents li:nth-child(2){
+background-color: #f1f1f1;
+}
+#wrap main .bg .goal_contents li:nth-child(3){
+background-color: #F3C300;
+}
+#wrap main .bg .goal_contents li * {display: block;}
+#wrap main .bg .goal_contents li img {
+    width: 50px;
+    margin:0 auto 20px;
+    /* 부모가 작은 블록 요소를 가운데 정렬하고 싶을때 margin 좌우 auto */
+    filter:invert(100%)
+}
+#wrap main .bg .goal_contents li:nth-child(2) img {
+    filter:invert(0);
+}
+#wrap main .bg .goal_contents li span {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+#wrap main .bg .goal_contents li:nth-child(2) span {color: #000;}
+
+#wrap main .bg .strategy_contents {
+}
+#wrap main .bg .strategy_contents dl {
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-left: -20px;
+    padding-top: 47px;
+
+}
+#wrap main .bg .strategy_contents dl dt {
+    text-decoration-line: underline;
+    /* text-decoration:line-through; */
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+}
+#wrap main .bg .strategy_contents dl dd {
+    font-size: 1rem;
+    line-height: 1.5;
+}
