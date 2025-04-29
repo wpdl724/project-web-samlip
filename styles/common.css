@@ -1,13 +1,33 @@
 /* index, 모든 sub 적용 할 공통 header, footer common.css */
 #wrap {}
-#wrap header {}
+#wrap header {
+    background-color: aqua;
+    height: 92px;
+    padding: 0 60px;
+    /* container대상은(header이다.) item대상은(h1, na, right_menu이다) */
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 #wrap header h1 {}
 #wrap header h1 a{}
 #wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {}
-#wrap header nav .gnb li {}
+#wrap header nav {
+    background-color: lime;
+}
+#wrap header nav .gnb {
+    /* container대상은(.gnb이고,) item대상은(li이다) */
+    display: flex; flex-flow: row nowrap;
+}
+#wrap header nav .gnb li {
+    margin-right: 60px;
+}
+#wrap header nav .gnb li:last-child {margin: 0;}
+
 #wrap header nav .gnb li a {
+    border: 1px solid red;
+    height: 92px; display: block; line-height: 92px;
     /* font-family: 'pretendard', sans-serif;  `reset.css`에 설정했음, 필요없는 부분*/
     font-weight: 600;
     font-size: 1.125rem;
@@ -16,18 +36,65 @@
     /* text-align: left; `reset.css`에  초기값설정했음, 필요없는 부분으로 생략 */
     /* color: #000; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
 }
-#wrap header .right_menu {}
-#wrap header .right_menu li {}
+#wrap header .right_menu {
+    background-color: yellow;
+    display:flex; flex-flow: row nowrap;
+    align-items: center;
+}
+#wrap header .right_menu li {
+    margin-left: 30px;
+}
+#wrap header .right_menu li:first-child { 
+    margin-left:0;
+    align-items: center;
+    display: flex; flex-flow: row nowrap;
+}
+/* 포토샵, 피그마에서 디자인한 구분선 디자인은 CSS에서 가상선택자 after 또는 before를 이용하여 면으로 변경하여 디자인한다. */
+#wrap header .right_menu li:first-child::after {
+    content: ''; display:inline-block;
+    width:1px; height: 20px;
+    background-color: #000;
+    margin-left: 30px;
+}
+#wrap header .right_menu li:first-child a {
+    line-height: 24px;
+}
 #wrap header .right_menu li a {
     font-size:0.75rem;
     letter-spacing: 0;
 }
-#wrap header .right_menu li a img {}
+#wrap header .right_menu li a img {
+}
 /* ====================================================footer */
-#wrap footer {}
-#wrap footer #top {}
-#wrap footer #top .left {}
-#wrap footer #top .left a {}
+#wrap .footer_full_w { /* 메인페이지에서 footer에서는 좁게 나타나고, 서브페이지(company페이지)에서는 footer가 full사이즈로 나타난다. */
+    width: 100%;
+    padding: 50px 60px;
+}
+#wrap footer {
+    background-color: aqua;
+    width: 1280px; margin: 0 auto;
+    padding: 50px 0;
+}
+#wrap footer #top {
+    background-color: #138fbf;
+    margin-bottom: 12px;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+#wrap footer #top .left {
+    background-color: orange;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+#wrap footer #top .left a {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 51px;    
+}
+#wrap footer #top .left a:last-child {
+    margin-right:  0;
+}
 #wrap footer #top .left a:nth-child(1) {
     font-weight: 600;
     color:#138fbf;
@@ -37,24 +104,40 @@
     color:#da2128;
 }
 #wrap footer #top .left a img {}
-#wrap footer #top .right {}
-/* footer 패밀리사이트+사이트맵 공통 */
-#wrap footer .top .right .site {
-    font-size:0.75rem;
-    border:1px solid #eee;
-    padding:7px 10px;
+#wrap footer #top .right {
+    background-color: yellow;
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
 }
 /* footer 패밀리사이트+사이트맵 공통 */
-#wrap footer #top .right select {}
+#wrap footer #top .right .site {
+    font-size:0.75rem;
+    border:1px solid #eee;
+    padding:7px 10px; height: 38px;
+}
+/* footer 패밀리사이트+사이트맵 공통 */
+#wrap footer #top .right select {
+    width: 197px; outline: none;
+    background:#fff url(../images/arrow.png) no-repeat 90% center;
+}
 #wrap footer #top .right select option {}
-#wrap footer #top .right .site map  {}
-#wrap footer #top .right .site map span {}
-#wrap footer #top .right .site map img {}
+#wrap footer #top .right .site_map  {
+    background: #fff;
+    width:135px; 
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+#wrap footer #top .right .site_map span {
+}
+#wrap footer #top .right .site_map img {}
 #wrap footer #bottom * {}
 #wrap footer #bottom address {
     font-size: 0.875rem;
     line-height: 1.5;
     color:#808080;
+    margin-bottom: 50px;
 }
 #wrap footer #bottom p {
     /* font-size: 0.875rem;
