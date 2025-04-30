@@ -3,68 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="SPC SAMLIP 대한민국 제빵 전문 식품회사">
-    <meta name="keywords" content="SPC, SPC삼립, 삼립">
+    <meta name="keywords" content="SPC, spc삼립, 삼립">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPC 삼립</title>
-    <!-- 웹 글꼴, 디자인 css, reset  -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/>
-    <link href="./styles/common.css" rel="stylesheet">
+    <title>SPC삼립 </title>
+    <!-- 웹글꼴, 디자인CSS,reset -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"/>
     <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/common.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
     <div id="wrap">
         <header>
-            <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립"></a></h1>
-            <nav> <!-- nav 태그 쓴 이유 ? gnb를 묶어주는 시멘틱태그의 대표가 nav이기 때문이다. -->
-                <ul class="gnb"> <!-- ul-li를 쓴 이유? 서브메뉴가 있기 때문이다. -->
-                    <li><a href="./company.html">COMPANY</a></li>
-                    <li><a href="#">BRANDS</a></li>
-                    <li><a href="./ir.html">IR</a></li>
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립 로고"></a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="./company.html">COMPANY</a>
+                        <!-- s: company의 서브메뉴 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb_depth1">
+                                <li>
+                                    <a href="#">SPC삼립 소개</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">경영이념</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">사업분야</a></li>
+                                        <li><a href="#">공장소개</a></li>
+                                        <li><a href="#">주요 관계사</a></li>
+                                        <li><a href="#">CI/BI</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">윤리경영</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">정도경영</a></li>
+                                        <li><a href="#">사회공헌활동</a></li>
+                                        <li><a href="#">CCM 인증</a></li>
+                                        <li><a href="#">동반성장</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">삼립뉴스</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">공고</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">공장소개</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e: company의 서브메뉴 위치 -->
+                    </li>
+                    <li><a href="#">BRANDS</a>
+                        <!-- s: brandd의 서브메뉴 위치 -->
+                        <div class="lnb_bg">
+                            <div class="lnb_depth1">
+                                <h2>FAMILY BRAND</h2>
+                                <li>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">FAMILY BRAND</a></li>
+                                        <li><a href="#"><img src="./images/brand/01.png"></a></li>
+                                        <li><a href="#">종합식품기업 브랜드 삼립</a></li>
+                                    </ul>
+                                    <ul class="lnb_depth2">
+                                        <a href="#">BAKERY</a>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                    </ul>
+                                    <ul class="lnb_depth2">
+                                        <a href="#">FOOD</a>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                            <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                    </ul>
+                                    <ul class="lnb_depth2">
+                                        <a href="#">STORE / ONLINE</a>
+                                        <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png"></a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </div>
+                <!-- e: brandd의 서브메뉴 위치 -->
+                    </li>
+                    <li>
+                        <a href="./ir.html">IR</a>
+                        <!-- s: ir의 서브메뉴 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb_depth1">
+                                <li>
+                                    <a href="#" >기업지배구조</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">이사회</a></li>
+                                        <li><a href="#">이사회 내 위원회</a></li>
+                                        <li><a href="#">주주총회</a></li>
+                                        <li><a href="#">ESG 관련 정보</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" >재무정보</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">재무상태표</a></li>
+                                        <li><a href="#">손익계산서</a></li>
+                                        <li><a href="#">현금흐름표</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" >주식정보</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">공시</a></li>
+                                        <li><a href="#">실시간 주가정보</a></li>
+                                        <li><a href="#">배당현황</a></li>
+                                        <li><a href="#">공시정보관리규정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e: ir의 서브메뉴 위치 -->
+                    </li>
                     <li><a href="./sns.html">SNS</a></li>
                     <li><a href="#">RECRUIT</a></li>
-                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">STROE</a></li>
                 </ul>
+                
             </nav>
-            <ul class="right_menu"> <!-- 만약에 서브메뉴가 없었다면, div로 묶어서 a태그 3개로 작성했을것 -->
+            <ul class="right_menu">
                 <li><a href="#">CUSTOMER</a></li>
-                <li><a href="#"><img src="./images/icon_lang_kr.png" alt="한국어언어변경"></a></li>
-                <li><a href="#"><img src="./images/icon_search.png" alt="검색하기"></a></li>
+                <li><a href="#"><img src="./images/icon_lang_kr.png" alt="언어설정"></a></li>
+                <li><a href="#"><img src="./images/icon_search.png" alt="검색"></a></li>
             </ul>
         </header>
+        <!-- 메인시작-->
         <main>
-
+            <div class="bnr" style="height: 100vh; background-color:lightcoral;">
         </main>
+        <!-- 풋터시작 -->
         <footer>
-            <div id="top"> <!-- 다음에는 class로 바꿔라 -->
+            <div class="top">
                 <div class="left">
                     <a href="#">개인정보처리방침</a>
-                    <a href="#">영상정보처리기기운영관리방침</a>
+                    <a href="#">영상정보처리기기 운영관리방침</a>
                     <a href="#">거래희망회사 사전등록</a>
                     <a href="#">동반성장</a>
-                    <a href="#"><img src="./images/ccm.png" alt="CCM, 소비자인증경영"></a>
+                    <a href="#"><img src="./images/customer_logo.png" alt="소비자중심"></a>
                 </div>
                 <div class="right">
-                    <!-- 서버와 연결된 작업(로그인,회원가입,장바구니,구매하기,회원정보,게시판 등)이 아닌 단순 수행 작업 일 경우는 input, button 등의 태그를 작성해도 form 태그를 작성해도 form 태그를 추가 작성하지 않아도 된다. -->
-                    <!-- site 와 site 사이의 공백 처리한다. (공통이름 설정) -->
+                    <!-- 서버와 연결된 작업이 아닌 단순 수행작업(로그인, 회원가입,장바구니,구매하기,회원정보,게시판 등등)일 경우는 input, button 등의 태그를 작성해도 fomr 태그를 추가 작성하지 않아도 된다. -->
+                    <select name="family_site" class="site">
+                        <option>FAMILY SITES</option>
+                        <option value="https://www.paris.co.kr/">PARIS BAGUETTE</option>
+                        <option value-="https://www.baskinrobbins.co.kr/">BASKIN ROBBINS</option>
+                        <option value="https://www.dunkindonuts.co.kr/">DUNKIN'</option>
+                        <option value="http://www.shakeshack.kr/index.jsp">SHAKE SHAKE</option>
+                    </select>
                     <!-- <div class="family_site site">
                         <span>FAMILY SITES</span>
-                        <img src="./images/arrow.png" alt=""> -->
-                    <select name="family_site" class="site"> <!-- 홈에서 태그 만드는것 -->
-                        <option>FAMILY SITES</option>
-                        <option value="https://paris.co.kr">PARIS BAGUETTE</option>
-                        <option value="https://baskinrobbins.co.kr">Baskin Robbins</option>
-                        <option value="https://dunkindounts.co.kr">Dunkin</option>
-                    </select>
-                    <div class="site_map site"><!-- site 와 site 사이의 공백 처리한다. (공통이름 설정) -->
+                        <img src="./images/arrow.png" alt="더보기">
+                    </div> -->
+                    <div class="site_map site">
                         <span>SITE MAP</span>
-                        <img src="./images/arrow.png" alt="">
+                        <img src="./images/arrow.png" alt="더보기">
                     </div>
                 </div>
             </div>
-            <div id="bottom">
-                <address>고객센터 전화번호 080-739-8752 (월~금 9:00~17:00)<br>101, Gongdan 1-daero, Siheung-si Gyeonggi-do, Republic of Korea(주)SPC 삼립 대표이사 황종현</address>
-                <p>&copy; SPC Samlip. All right reserved.</p> <!-- &copy; 카피마크 -->
+            <div class="btm">
+                <address>
+                    Customer Service 전화번호 080-739-8572 (월~금 09:00~17:00)<br>
+                    101,Gongdan 1-dearo,Sheung-si,Gyeonggi-do,Republic of Korea ㈜SPC 대표이사 황종현
+                </address>
+                <p>&copy;SPC Samlip. All rights reserved</p>
+
             </div>
         </footer>
     </div>

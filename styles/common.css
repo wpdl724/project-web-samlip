@@ -1,146 +1,216 @@
-/* index, 모든 sub 적용 할 공통 header, footer common.css */
+/* index, 모든 sub 적용할 공통 header, footer common.css */
+/* fotn-size:0.75rem; 12px */
+/* fotn-size:0.875rem; 14px */
+/* fotn-size:1.125rem; 18px */
+/* #138fbf : 개인정보 */
+/* #da2128: 운영방침 */
+/* #808080: 글자색 */
+/* #eee : 박스색 */
+
 #wrap {}
 #wrap header {
-    background-color: aqua;
+    position:relative;/* lnb_bg의 부모 위치 기준 설정 */
+    /* background-color: yellowgreen; */
     height: 92px;
-    padding: 0 60px;
-    /* container대상은(header이다.) item대상은(h1, na, right_menu이다) */
+    padding:0 60px;
+    /* container (header) item (h1, nav, right_menu) 정렬 */
     display: flex;
-    flex: row wrap;
+    flex-flow:row nowrap;
     justify-content: space-between;
     align-items: center;
 }
 #wrap header h1 {}
-#wrap header h1 a{}
+#wrap header h1 a {}
 #wrap header h1 a img {}
+/* nav 시작 */
 #wrap header nav {
-    background-color: lime;
+    /* background-color: yellow; */
 }
 #wrap header nav .gnb {
-    /* container대상은(.gnb이고,) item대상은(li이다) */
-    display: flex; flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
 }
-#wrap header nav .gnb li {
-    margin-right: 60px;
-}
-#wrap header nav .gnb li:last-child {margin: 0;}
-
-#wrap header nav .gnb li a {
-    border: 1px solid red;
-    height: 92px; display: block; line-height: 92px;
-    /* font-family: 'pretendard', sans-serif;  `reset.css`에 설정했음, 필요없는 부분*/
-    font-weight: 600;
+#wrap header nav .gnb > li {margin-right: 60px;}
+#wrap header nav .gnb > li:last-child {margin-right:0;}
+#wrap header nav .gnb > li > a { 
+    height: 92px; display: block;
+    line-height: 92px;
+    /* border:1px solid #000; */
+    /* reset.css 초기값에 다 있기 때문에 생략가능 */
+    /* font-family: 'pretendard', sans-serif;
+    letter-spacing:-0.02rem;
+    line-height: 1;
+    color: #000;
+    text-align: left; */
     font-size: 1.125rem;
-    /* line-height:1; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
-    /* letter-spacing: -0.02rem; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
-    /* text-align: left; `reset.css`에  초기값설정했음, 필요없는 부분으로 생략 */
-    /* color: #000; `reset.css`에 초기값 설정했음, 필요없는 부분으로 생략 */
+    font-weight: 700;
 }
-#wrap header .right_menu {
+/* ===========================서브메뉴  */
+#wrap header nav .gnb > li:first-child:hover .lnb_bg {
+    display: block;
+}
+#wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {
+    display: block;
+}
+/* ========================================S: brand 서브메뉴 */
+#wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {
+    display: block;
+}
+/* ========================================E: brand 서브메뉴 */
+#wrap header nav .gnb > li .lnb_bg:nth-child(1) {
+    background: rgba(255,255,255,0.8);
+    position:absolute;
+    left:0; top:92px;
+    /* abslute의 대상일 경우 width값은 부모 설정된 요소의 상대값(%)으로 설정된다.*/
+    width: 100%;
+    padding:50px 0;
+    /* 초기 숨기기 (마우스 올릴때만 보이도록) */
+    display: none;
+}
+#wrap header nav .gnb > li .lnb_bg {
+    background: rgba(255,255,255,0.8);
+    position:absolute;
+    left:0; top:92px;
+    /* abslute의 대상일 경우 width값은 부모 설정된 요소의 상대값(%)으로 설정된다.*/
+    width: 100%;
+    padding:50px 0;
+    /* 초기 숨기기 (마우스 올릴때만 보이도록) */
+    display: none;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
     background-color: yellow;
-    display:flex; flex-flow: row nowrap;
-    align-items: center;
+    width: max-content;
+    margin:  0 auto;
+    display: flex; flex-flow: row nowrap;
+    text-align: center;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li {
+    margin-right: 100px;
+    
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li:last-child {
+    margin-right: 0;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a {
+    margin-bottom: 14px;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
+    border: 2px solid red;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
+    margin-top: 16px;
+}
+#wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
+/* ==============================================우측 보조메뉴 */
+/* sub nav 시작 */
+#wrap header .right_menu {
+    /* background-color: wheat; */
+    display: flex; flex-flow: row nowrap;
 }
 #wrap header .right_menu li {
     margin-left: 30px;
 }
-#wrap header .right_menu li:first-child { 
+#wrap header .right_menu li:first-child {
+    display: flex;
+    flex-flow:row nowrap;
     margin-left:0;
     align-items: center;
-    display: flex; flex-flow: row nowrap;
-}
-/* 포토샵, 피그마에서 디자인한 구분선 디자인은 CSS에서 가상선택자 after 또는 before를 이용하여 면으로 변경하여 디자인한다. */
-#wrap header .right_menu li:first-child::after {
-    content: ''; display:inline-block;
-    width:1px; height: 20px;
-    background-color: #000;
-    margin-left: 30px;
 }
 #wrap header .right_menu li:first-child a {
+    /* background-color: #da2128; */
     line-height: 24px;
 }
+/* 포토샵,피그마에서 디자인한 구분선 디자인은 css에서 가상선택자 after 또는 before를 이용하여 면으로 변경하여 디자인한다. */
+#wrap header .right_menu li:first-child::after {
+    content: '';
+    display: inline-block;
+    width: 2px; height: 20px;
+    background-color: #000;
+    margin-left:30px;
+}
 #wrap header .right_menu li a {
-    font-size:0.75rem;
+    font-size:0.75rem; /* 12px */
     letter-spacing: 0;
 }
-#wrap header .right_menu li a img {
-}
-/* ====================================================footer */
-#wrap .footer_full_w { /* 메인페이지에서 footer에서는 좁게 나타나고, 서브페이지(company페이지)에서는 footer가 full사이즈로 나타난다. */
+#wrap header .right_menu li a img {}
+/* ----------------------------------------footer */
+#wrap .footer_full_w {
     width: 100%;
     padding: 50px 60px;
 }
 #wrap footer {
-    background-color: aqua;
     width: 1280px; margin: 0 auto;
-    padding: 50px 0;
+    padding:50px 0;
+    /* background-color: wheat; */
 }
-#wrap footer #top {
-    background-color: #138fbf;
+#wrap footer .top {
+    /* background-color: violet; */
     margin-bottom: 12px;
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
-#wrap footer #top .left {
-    background-color: orange;
-    display: flex; flex-flow: row nowrap;
+#wrap footer .top .left {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-flow: row nowrap;
     align-items: center;
 }
-#wrap footer #top .left a {
-    font-size: 1rem;
+#wrap footer .top .left a {
     font-weight: 600;
-    margin-right: 51px;    
+    margin-right:51px;
 }
-#wrap footer #top .left a:last-child {
-    margin-right:  0;
+#wrap footer .top .left a:last-child {
+    margin-right:0;
 }
-#wrap footer #top .left a:nth-child(1) {
-    font-weight: 600;
+#wrap footer .top .left a:nth-child(1) {
     color:#138fbf;
 }
-#wrap footer #top .left a:nth-child(2) {
-    font-weight: 600;
+#wrap footer .top .left a:nth-child(2) {
     color:#da2128;
 }
-#wrap footer #top .left a img {}
-#wrap footer #top .right {
-    background-color: yellow;
-    display: flex; flex-flow: row nowrap;
+#wrap footer .top .left a img {}
+#wrap footer .top .right {
+    /* background-color: brown; */
+    display: flex;
+    flex-flow: row nowrap;
     align-items: center;
 }
-/* footer 패밀리사이트+사이트맵 공통 */
-#wrap footer #top .right .site {
-    font-size:0.75rem;
-    border:1px solid #eee;
-    padding:7px 10px; height: 38px;
+/* ============================== footer 패밀리 사이트+사이트맵 공통 */
+#wrap footer .top .right .site {
+    /* background-color: yellow; */
+    border: 2px solid #eee;
+    font-size: 0.75rem;
+    padding:7px 10px;
+    height: 38px;
 }
-/* footer 패밀리사이트+사이트맵 공통 */
-#wrap footer #top .right select {
+/* ============================== footer 패밀리 사이트+ 사이트맵 공통*/
+#wrap footer .top .right select {
     width: 197px; outline: none;
-    background:#fff url(../images/arrow.png) no-repeat 90% center;
+    background:#fff url(../images/arrow.png) no-repeat 95% center;
+    background-size: 18px;
 }
-#wrap footer #top .right select option {}
-#wrap footer #top .right .site_map  {
+#wrap footer .top .right select option {}
+#wrap footer .top .right .site_map {
     background: #fff;
-    width:135px; 
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
+    width: 135px;
+    display:flex;
+    margin-left:20px;
+    flex-flow: row nowrap;
     align-items: center;
-    margin-left: 20px;
+    justify-content: space-between;
 }
-#wrap footer #top .right .site_map span {
+#wrap footer .top .right .site_map span {}
+#wrap footer .top .right .site_map img {
+    width: 14px;
+    height: 14px;
 }
-#wrap footer #top .right .site_map img {}
-#wrap footer #bottom * {}
-#wrap footer #bottom address {
-    font-size: 0.875rem;
+#wrap footer .btm {}
+/* * 의 뜻 ~ 의 모든 자식들에게 포함하는것 */
+#wrap footer .btm * {
+    fotn-size:0.875rem;
+    color: #808080;
     line-height: 1.5;
-    color:#808080;
-    margin-bottom: 50px;
 }
-#wrap footer #bottom p {
-    /* font-size: 0.875rem;
-    line-height: 1.5;
-    color:#808080; */
-}
+#wrap footer .btm address {}
+#wrap footer .btm p {}
