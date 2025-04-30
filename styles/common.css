@@ -53,10 +53,26 @@
     display: block;
 }
 /* ========================================S: brand 서브메뉴 */
-#wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {
-    display: block;
+#wrap header nav .gnb > li:nth-child(2):hover .lnb_brands_bg {}
+#wrap header nav #gnb > li .lnb_brands_bg {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 > li {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > h2 {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > h2 a {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > a {}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > a img {} 
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > .lnb_brands_depth2 {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-content:center;
 }
-/* ========================================E: brand 서브메뉴 */
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > .lnb_brands_depth2 li {
+    background-color: yellow;
+    margin-bottom:16px;
+}
+#wrap header nav #gnb > li .lnb_brands_bg .lnb_brands_depth1 li > .lnb_brands_depth2 li a {}
+/* ========================================E: brands 서브메뉴 */
 #wrap header nav .gnb > li .lnb_bg:nth-child(1) {
     background: rgba(255,255,255,0.8);
     position:absolute;
