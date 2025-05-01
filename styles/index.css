@@ -47,7 +47,7 @@ main .ad_wrap .ad_btn #ad_next {
     transform: scaleX(-1); /* 버튼 모양 좌우 반전 설정 1은 정비율을 말하는것이고, -1은 역방향을 의미한다.*/
 }
 main .ad_wrap .ad_btn #ad_next img {}
-/* ===========================================================2. 광고 개별 영역 */
+/* ===========================================================1. 광고 개별 영역 */
 main .ad_wrap .ad_container .ad1 {
     display: block;
     background-image: url(../images/ad/ad_01.jpg);
@@ -56,3 +56,39 @@ main .ad_wrap .ad_container .ad2 {}
 main .ad_wrap .ad_container .ad3 {}
 main .ad_wrap .ad_container .ad4 {}
 main .ad_wrap .ad_container .ad5 {}
+/* ============================================================= 2.뉴스 공지사항  */
+main .news_all {}
+main .news_all h2 {}
+main .news_all > p {}
+main .news_all .news_wrap {
+    border: 5px solid red;
+    width: 1370px; 
+    overflow: hidden; /* 보이는 영역 4개만 보이게 된다. */
+    margin: 0 auto; /* 가운데 배치 */
+}
+main .news_all .news_wrap .news_container {
+    border: 5px solid blue;
+    display: flex; flex-flow: row nowrap; 
+    /* width: max-content; */
+
+}
+main .news_all .news_wrap .news_container .news {
+    background-color: yellow;
+    width: 311px;
+    margin-right: 42px;
+}
+main .news_all .news_wrap .news_container .news a {}
+main .news_all .news_wrap .news_container .news a p {}
+main .news_all .news_wrap .news_container .news a p img {}
+main .news_all .news_wrap .news_container .news a h3 {}
+main .news_all .news_wrap .news_container .news .date {}
+/*  ======================================================= 뉴스 공지사항 버튼  */
+main .news_all .news_wrap .news_btn {}
+main .news_all .news_wrap .news_btn #news_prev {}
+main .news_all .news_wrap .news_btn #news_prev img {}
+main .news_all .news_wrap .news_btn #news_next {}
+main .news_all .news_wrap .news_btn #news_next img {}
+/* ========================================================================= 뉴스 더보기 */
+main .news_all .all_news {}
+main .news_all .all_news img {}
+main .news_all .all_news em {}
