@@ -17,19 +17,113 @@
         <!-- ==================================s:header -->
         <header>
             <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립"></a></h1>
-            <nav> <!-- nav 태그 쓴 이유 ? gnb를 묶어주는 시멘틱태그의 대표가 nav이기 때문이다. -->
-                <ul class="gnb"> <!-- ul-li를 쓴 이유? 서브메뉴가 있기 때문이다. -->
-                    <li><a href="./company.html">COMPANY</a></li>
-                    <li><a href="#">BRANDS</a></li>
-                    <li><a href="./ir.html">IR</a></li>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="./company.html">COMPANY</a>
+                        <!-- s:company 서브메뉴 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb_depth1">
+                                <li><a href="#">SPC삼립소개</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">경영이념</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">사업분야</a></li>
+                                        <li><a href="#">공장소개</a></li>
+                                        <li><a href="#">주요관계사</a></li>
+                                        <li><a href="#">CI/BI</a></li>
+                                        <li><a href="#">오시는 길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">윤리경영</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">정도경영</a></li>
+                                        <li><a href="#">사회공헌활동</a></li>
+                                        <li><a href="#">CCM 인증</a></li>
+                                        <li><a href="#">동반성장</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">삼립뉴스</a>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#">보도자료</a></li>
+                                        <li><a href="#">공고</a></li>
+                                        <li><a href="#">공지사항</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e:company 서브메뉴 위치 -->
+                    </li>
+                    <li><a href="#">BRANDS</a>
+                        <!-- s:brands 서브메뉴 위치 -->
+                        <div class="lnb_bg" id="lnb_brands">
+                            <ul class="lnb_depth1">
+                                <li>
+                                    <a href="#">
+                                        <h2>FAMILY BRAND</h2>
+                                        <p><img src="./images/brand/logo.png" alt=""></p>
+                                        <p>종합식품기업 브랜드 삼립</p>
+                                    </a>
+                                </li>
+                                <li><h2>BAKERY</h2>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/6.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/4.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/5.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/6.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/1.png" alt="미각제빵소 바로가기"></a></li>
+                                    </ul>
+                                </li>
+                                <li><h2>FOOD</h2>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/2.png" alt="미각제빵소 바로가기"></a></li>
+                                    </ul>
+                                </li>
+                                <li><h2>STORE / ONLINE</h2>
+                                    <ul class="lnb_depth2">
+                                        <li><a href="#"><img src="./images/brand/4.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/4.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/4.png" alt="미각제빵소 바로가기"></a></li>
+                                        <li><a href="#"><img src="./images/brand/4.png" alt="미각제빵소 바로가기"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e:brands 서브메뉴 위치 -->
+                    </li>
+                    <li><a href="./ir.html">IR</a>
+                        <!-- s:ir 서브메뉴 위치 -->
+                        <div class="lnb_bg">
+                            <ul class="lnb_depth1">
+                                <li><a href="#"></a>
+                                    <ul class="lnb_depth2"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- e:ir 서브메뉴 위치 -->
+                    </li>
                     <li><a href="./sns.html">SNS</a></li>
                     <li><a href="#">RECRUIT</a></li>
                     <li><a href="#">STORE</a></li>
                 </ul>
             </nav>
-            <ul class="right_menu"> <!-- 만약에 서브메뉴가 없었다면, div로 묶어서 a태그 3개로 작성했을것 -->
+            <ul class="right_menu">
                 <li><a href="#">CUSTOMER</a></li>
-                <li><a href="#"><img src="./images/icon_lang_kr.png" alt="한국어언어변경"></a></li>
+                <li><a href="#"><img src="./images/icon_lang_kr.png" alt="한국어 언어 변경"></a></li>
                 <li><a href="#"><img src="./images/icon_search.png" alt="검색하기"></a></li>
             </ul>
         </header>

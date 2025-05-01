@@ -35,12 +35,12 @@
     /* color:#000; reset초기값에 존재하므로 생략 */
 }
 /* ==================================서브메뉴 */
-#wrap header nav .gnb > li:first-child:hover .lnb_bg {
+#wrap header nav .gnb > li:hover .lnb_bg {
     display:block;
 }
-#wrap header nav .gnb > li:first-child .lnb_bg {display:none;}/* company */
-#wrap header nav .gnb > li:nth-child(2) .lnb_bg {}/* brands */
-#wrap header nav .gnb > li:nth-child(3) .lnb_bg {display:none;}/* ir */
+/* #wrap header nav .gnb > li:first-child .lnb_bg {display:none;}/* company */
+/* #wrap header nav .gnb > li:nth-child(2) .lnb_bg {display: block; brands */
+/* #wrap header nav .gnb > li:nth-child(3) .lnb_bg {display:none;} ir */ 
 #wrap header nav .gnb > li .lnb_bg {
     background:rgba(255,255,255,0.8);
     position:absolute; left:0; top:92px;
@@ -48,10 +48,10 @@
     width:100%;
     padding:50px 0;
     /* 초기 숨기기(마우스 올릴때만 보이도록) */
-    /* display:none; */
+    display:none;
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
-    background-color:yellow;
+    /* background-color:yellow; */
     width:max-content; margin:0 auto;
     display:flex; text-align:center;
     flex-flow:row nowrap;
@@ -64,7 +64,7 @@
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a {}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
-    border:2px solid red;
+    /* border:2px solid #fff; */
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {}
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
@@ -72,15 +72,50 @@
 /* #wrap header nav .gnb > li:nth-child(2) .lnb_bg {} */
 #wrap header nav .gnb > li #lnb_brands {}
 #wrap header nav .gnb > li #lnb_brands .lnb_depth1 {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li {
+    margin-top: 50px;
+
+}
 #wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a h2 {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p img {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a h2 {
+    font-size: 1.063rem;
+    font-weight: 700;
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > h2 {
+    /* margin-top: 50px; */
+    font-size: 1.063rem;
+    font-weight: 700;
+}
+
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p {
+    font-size: 1rem;
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p img {
+    
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 {
+    display: flex; 
+    flex-flow: row wrap;  /* 줄바꿈하기 -> nowrap은 줄바꿈 하지 않기*/
+    justify-content: space-between;
+    width: 310px;
+    
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li {
+    margin-top: 20px;
+}
 #wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li > a {}
-#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li > a img {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 > li > a img {
+    width: 150px;
+}
+/* ==================================gnb 2. brands 서브메뉴개별디자인 (이미지효과) */
+#wrap header nav .gnb > li #lnb_brands a img {
+    filter:grayscale(100%); opacity: (80%);
+    border: 1px solid #fff; /* 덜컹거리는 느낌이 있으니깐 기본값을 줘서 그 느낌을 없앤다 */
+}
+#wrap header nav .gnb > li #lnb_brands a:hover img {
+    filter:grayscale(0);
+    border: 1px solid #000;
+}
 /* ==================================우측 보조메뉴 */
 #wrap header .right_menu {
     background-color:yellow;
