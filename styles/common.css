@@ -61,7 +61,7 @@
     position: absolute; left:0; top: 92px;
 }
 #wrap header nav .gnb > li .lnb_brands_bg .lnb_brdepth1 li > .lnb_depth2 li {
-    background-color: yellow;
+    /* background-color: yellow; */
     margin-bottom:16px;
 }
 #wrap header nav .gnb > li .lnb_brand_bg .lnb_depth1 li > .lnb_depth2 li a {}
@@ -87,7 +87,7 @@
     display: none;
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
-    background-color: yellow;
+    /* background-color: yellow; */
     width: max-content;
     margin:  0 auto;
     display: flex; flex-flow: row nowrap;
@@ -104,7 +104,7 @@
     margin-bottom: 14px;
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 #wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
     margin-top: 16px;
@@ -186,10 +186,10 @@ sub nav 시작 */
     margin-right:0;
 }
 #wrap footer .top .left a:nth-child(1) {
-    color:#138fbf;
+    /* color:#138fbf; */
 }
 #wrap footer .top .left a:nth-child(2) {
-    color:#da2128;
+    /* color:#da2128; */
 }
 #wrap footer .top .left a img {}
 #wrap footer .top .right {

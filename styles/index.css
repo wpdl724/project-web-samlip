@@ -1,1 +1,58 @@
 /* index.css 메인 첫 페이지의 <main>  */
+main {}
+main .ad_wrap {/* 슬라이드 + 버튼에 대한 큰 그룹*/
+    
+}
+main .ad_wrap .ad_container {/* 슬라이드 그룹 */
+    
+}
+main .ad_wrap .ad_container .ad {/* 개별 슬라이드 그룹 */
+    display: none; /* 모두 숨기기 */
+    height: 800px;
+    background-position: center;
+    position: relative; /* 부모는 움직이지 않음 -> relative 라고 작성해야함 */
+    
+}
+main .ad_wrap .ad_container .ad .ad_text {
+    /* background-color: darkslategrey; */
+    width: 1280px;
+    margin:0 auto;
+    /* background-position: absolute; 부모기준으로 위치조정 -> 해봤는데 마진,오토는 안된다 */
+    position: absolute; /* 부모기준으로 움직여야하니깐 자식한테 absolute 작성해야함 */
+    bottom: 120px; /* 글씨 밑에 피그마 여백 사이즈 확인 120px */
+    left: 50%; /* 왼쪽 상단이 기본값이여서 오른쪽 으로 조금 더 갔음 정가운데로 정렬하고싶으면 애니메이션 설정함*/
+    transform: translateX(-50%); /* absoulte; 할때 가운데 정렬을 할수 있는 방법이다 ->좌표를 움직이는 translateX를 -50%값을 줘서 가운데 배치한다 */
+    /* **추가설명** => absolute로 위치 설정시 요소를 가운데 배치하려면 left:50%와 translate(-50%)를 함께 이용해야 배치할수 있다. 단, 요소가 absolute가 아닌 평범한 요소라면 가운데 배치 시 margin :0 auto를 사용하면 된다. */
+}   
+main .ad_wrap .ad_container .ad .ad_text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom:10px;
+}
+main .ad_wrap .ad_container .ad .ad_text p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 150%;
+}
+main .ad_wrap .ad_btn {
+    text-align: center;
+    padding: 34px 0;
+}
+main .ad_wrap .ad_btn #ad_prev {
+    margin-right: 10px
+}
+main .ad_wrap .ad_btn #ad_prev img {}
+main .ad_wrap .ad_btn #ad_next {
+    transform: scaleX(-1); /* 버튼 모양 좌우 반전 설정 1은 정비율을 말하는것이고, -1은 역방향을 의미한다.*/
+}
+main .ad_wrap .ad_btn #ad_next img {}
+/* ===========================================================2. 광고 개별 영역 */
+main .ad_wrap .ad_container .ad1 {
+    display: block;
+    background-image: url(../images/ad/ad_01.jpg);
+}
+main .ad_wrap .ad_container .ad2 {}
+main .ad_wrap .ad_container .ad3 {}
+main .ad_wrap .ad_container .ad4 {}
+main .ad_wrap .ad_container .ad5 {}

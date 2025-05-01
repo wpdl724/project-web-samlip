@@ -2,7 +2,7 @@
 #wrap {}
 #wrap header {
     position:relative;/* lnb_bg의 부모 위치 기준 설정 */
-    background-color:aqua;
+    /* background-color:aqua; */
     height:92px;
     padding:0 60px;
     /* container(header) item(h1, nav, right_menu)  */
@@ -15,7 +15,7 @@
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color:lime;
+    /* background-color:lime; */
 }
 #wrap header nav .gnb {
     /* container(.gnb) item(li) */
@@ -24,7 +24,7 @@
 #wrap header nav .gnb > li {margin-right:60px;}
 #wrap header nav .gnb > li:last-child {margin-right:0;}
 #wrap header nav .gnb > li > a {
-    border:1px solid red;
+    /* border:1px solid red; */
     height:92px; display:block; line-height:92px;
     /* font-family:'pretendard',sans-serif; reset초기값에 존재하므로 생략 */
     font-weight:600;
@@ -118,7 +118,7 @@
 }
 /* ==================================우측 보조메뉴 */
 #wrap header .right_menu {
-    background-color:yellow;
+    /* background-color:yellow; */
     display:flex; flex-flow:row nowrap;
 }
 #wrap header .right_menu li {margin-left:30px;}
@@ -148,19 +148,19 @@
     padding:50px 60px;
 }
 #wrap footer {
-    background-color:aqua;
+    /* background-color:aqua; */
     width:1280px; margin:0 auto;
     padding:50px 0;
 }
 #wrap footer .top {
-    background-color:lime;
+    /* background-color:lime; */
     margin-bottom:12px;
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
 }
 #wrap footer .top .left {
-    background-color:orange;
+    /* background-color:orange; */
     display:flex; flex-flow:row nowrap;
     align-items:center;
 }
@@ -174,11 +174,11 @@
 }
 #wrap footer .top .left a:nth-child(2) {
     font-weight:600;
-    color:#DA2128;
+    /* color:#DA2128; */
 }
 #wrap footer .top .left a img {}
 #wrap footer .top .right {
-    background-color:yellow;
+    /* background-color:yellow; */
     display:flex; flex-flow:row nowrap;
     align-items:center;
 }
