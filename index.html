@@ -12,6 +12,15 @@
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 우측 pagenation 고정영역 -->
+    <div class="right_nav">
+        <a href="#ad_wrap"><em>Main</em><span></span></a>
+        <a href="#news_all"><em>News & Notice</em><span></span></a> <!-- 바로가기 링크 기능 (main에서 class -> "id명을 추가해서 작성") -->
+        <a href="#studio_wrap"><em>Now @ Samlip Studio</em><span></span></a>
+        <a href="#brands_all"><em>Our Brands</em><span></span></a>
+        <a href="#footer"><em>Company Info</em><span></span></a>
+    </div>
+    <!-- 우측 pagenation 시작영역 -->
     <div id="wrap">
         <header>
             <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립"></a></h1>
@@ -150,7 +159,7 @@
         </header>
         <main>
             <!-- 1.광고 배너 -->
-            <section class="ad_wrap">
+            <section class="ad_wrap" id="ad_wrap">
                 <!-- 1-1. 광고 개별 그룹 -->
                 <div class="ad_container">
                     <div class="ad ad1"> <!-- 공동이름명 / 개별 이름명 -->
@@ -191,7 +200,7 @@
                 </div>
             </section>
             <!-- 2. 뉴스&공지사항 -->
-            <section class="news_all">
+            <section class="news_all" id="news_all">
                 <h2>News & Notice</h2>
                 <p>SPC Samlip news updates, from a company that is always happy.</p>
                 <section class="news_wrap">
@@ -280,7 +289,7 @@
                 </a>
             </section>
             <!-- 3. 삼립 스튜디오 -->
-            <section class="studio_wrap">
+            <section class="studio_wrap" id="studio_wrap">
                 <h2>Now @ Samlip Studio</h2>
                 <p>samlip Studio, spc Samlip’s YouTube channel where you can eat, watch, and digest</p>
                 <!-- 유튜브 채널 미리보기 바로 보이는 영역  -->
@@ -317,225 +326,241 @@
                 </a>
             </section>
             <!-- 4. 삼립 브랜드 -->
-            <section class="brands_all">
+            <section class="brands_all" id="brands_all">
                 <h2>Our Brands</h2>
                 <p>Introduction of SPC Samlip brands that are loved all throughout different business fields.</p>
                 <!-- 브랜드 로고 바로 보이는 영역  -->
                 <div class="brands_wrap"> <!-- 1. 슬라이드가 실제 보이는 영역 -->
-                    <div class="brands_container">
-                        <div class="our_brands_list"><!-- 2. 슬라이드 전체 묶는 가로영역(실제로 움직이는 부분)  -->
-                            <ul class="brands_slide1"> <!-- 첫번째 화면에 보이는 12개 로고 부모 -->
-                                <li> <!-- 첫번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 2번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 3번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 4번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 5번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 6번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 7번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 8번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 9번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 10번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 12번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="brands_slide2"> <!-- 첫번째 화면에 보이는 12개 로고 부모 -->
-                                <li> <!-- 첫번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 2번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 3번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 4번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 5번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 6번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 7번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 8번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 9번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 10번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                                <li> <!-- 12번째 로고 영역 (반복 *12) -->
-                                    <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
-                                    <!-- li 마우스 hover시 보이는 영역 -->
-                                    <div class="logo_details">
-                                        <h3>레디비</h3>
-                                        <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
-                                        <a href="#" class="view">View Details</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="brands_container"><!-- 2. 슬라이드 전체 묶는 가로영역(실제로 움직이는 부분)  -->
+                        <ul class="brands_slide1"> <!-- 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li> <!-- 첫번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 2번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 3번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 5번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 6번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 7번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 8번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 9번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 10번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 11번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 12번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brands_slide2"> <!-- 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li> <!-- 첫번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 2번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 3번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 4번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 5번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 6번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 7번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_02.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 8번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 9번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 10번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_03.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 11번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                            <li> <!-- 12번째 로고 영역 (반복 *12) -->
+                                <p class="logo"><img src="./images/brands/brand_01.png" alt="갓 구운 빵을 간변하게 READY B"></p>
+                                <!-- li 마우스 hover시 보이는 영역 -->
+                                <div class="logo_details">
+                                    <h3>레디비</h3>
+                                    <p>레디비는 집에서 간편하게 갓 구워 즐기는 홈베이커리 브랜드 입니다.</p>
+                                    <a href="#" class="view">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="brands_btn">
-                        <button type="button" id="brand_prev"><img src="./images/ad/ad_arrow.png" alt="이전 브랜드 보기"></button>
-                        <button type="button" id="brand_next"><img src="./images/ad/ad_arrow.png" alt="다음 브랜드 보기"></button>
+                        <button type="button" id="brands_prev"><img src="./images/ad/ad_arrow.png" alt="이전 브랜드 보기"></button>
+                        <button type="button" id="brands_next"><img src="./images/ad/ad_arrow.png" alt="다음 브랜드 보기"></button>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="footer">
             <div class="top">
                 <div class="left">
                     <a href="#">개인정보처리방침</a>
