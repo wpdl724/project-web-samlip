@@ -1,19 +1,19 @@
-/* index.css 메인 첫 페이지의 <main>  */
-main {}
-main .ad_wrap {/* 슬라이드 + 버튼에 대한 큰 그룹*/
+/* index.css 메인 첫 페이지의 <#wrap main>  */
+#wrap main {}
+#wrap main .ad_wrap {/* 슬라이드 + 버튼에 대한 큰 그룹*/
     
 }
-main .ad_wrap .ad_container {/* 슬라이드 그룹 */
+#wrap main .ad_wrap .ad_container {/* 슬라이드 그룹 */
     
 }
-main .ad_wrap .ad_container .ad {/* 개별 슬라이드 그룹 */
+#wrap main .ad_wrap .ad_container .ad {/* 개별 슬라이드 그룹 */
     display: none; /* 모두 숨기기 */
     height: 800px;
     background-position: center;
     position: relative; /* 부모는 움직이지 않음 -> relative 라고 작성해야함 */
     
 }
-main .ad_wrap .ad_container .ad .ad_text {
+#wrap main .ad_wrap .ad_container .ad .ad_text {
     /* background-color: darkslategrey; */
     width: 1280px;
     margin:0 auto;
@@ -24,132 +24,228 @@ main .ad_wrap .ad_container .ad .ad_text {
     transform: translateX(-50%); /* absoulte; 할때 가운데 정렬을 할수 있는 방법이다 ->좌표를 움직이는 translateX를 -50%값을 줘서 가운데 배치한다 */
     /* **추가설명** => absolute로 위치 설정시 요소를 가운데 배치하려면 left:50%와 translate(-50%)를 함께 이용해야 배치할수 있다. 단, 요소가 absolute가 아닌 평범한 요소라면 가운데 배치 시 margin :0 auto를 사용하면 된다. */
 }   
-main .ad_wrap .ad_container .ad .ad_text h2 {
+#wrap main .ad_wrap .ad_container .ad .ad_text h2 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
     margin-bottom:10px;
 }
-main .ad_wrap .ad_container .ad .ad_text p {
+#wrap main .ad_wrap .ad_container .ad .ad_text p {
     color: #fff;
     font-size: 1rem;
     line-height: 150%;
 }
 /* ===========================================btn */
-main .ad_wrap .ad_btn {
+#wrap main .ad_wrap .ad_btn {
     text-align: center;
     padding: 34px 0;
 }
-main .ad_wrap .ad_btn #ad_prev {
+#wrap main .ad_wrap .ad_btn #ad_prev {
     margin-right: 10px
 }
-main .ad_wrap .ad_btn #ad_prev img {}
-main .ad_wrap .ad_btn #ad_next {
+#wrap main .ad_wrap .ad_btn #ad_prev img {}
+#wrap main .ad_wrap .ad_btn #ad_next {
     transform: scaleX(-1); /* 버튼 모양 좌우 반전 설정 1은 정비율을 말하는것이고, -1은 역방향을 의미한다.*/
 }
-main .ad_wrap .ad_btn #ad_next img {}
+#wrap main .ad_wrap .ad_btn #ad_next img {}
 /* ===========================================================1. 광고 개별 영역 */
-main .ad_wrap .ad_container .ad1 {
+#wrap main .ad_wrap .ad_container .ad1 {
     display: block;
     background-image: url(../images/ad/ad_01.jpg);
 }
-main .ad_wrap .ad_container .ad2 {}
-main .ad_wrap .ad_container .ad3 {}
-main .ad_wrap .ad_container .ad4 {}
-main .ad_wrap .ad_container .ad5 {}
+#wrap main .ad_wrap .ad_container .ad2 {}
+#wrap main .ad_wrap .ad_container .ad3 {}
+#wrap main .ad_wrap .ad_container .ad4 {}
+#wrap main .ad_wrap .ad_container .ad5 {}
 /* ============================================================= 2.뉴스 공지사항  */
-main .news_all {
+#wrap main .news_all {
     text-align: center;
 }
-main .news_all h2 {
+#wrap main .news_all h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
-main .news_all > p {
+#wrap main .news_all > p {
     font-size: 1rem;
     margin-bottom: 20px;
 }
-main .news_all .news_wrap {
-    border: 5px solid red;
+#wrap main .news_all .news_wrap {
+    /* border: 5px solid red; */
     width: 1370px; 
     overflow: hidden; /* 보이는 영역 4개만 보이게 된다. */
     margin: 0 auto; /* 가운데 배치 */
 }
-main .news_all .news_wrap .news_container {
-    border: 5px solid blue;
+#wrap main .news_all .news_wrap .news_container {
+    /* border: 5px solid blue; */
     display: flex; flex-flow: row nowrap; 
     /* width: max-content; */
     text-align: left;
     margin: 100px 0 50px 0;
 }
-main .news_all .news_wrap .news_container .news {
-    background-color: yellow;
+#wrap main .news_all .news_wrap .news_container .news {
+    /* background-color: yellow; */
     width: 311px; height: 328px;
     margin-right: 42px;
     border: 1px solid #ccc;
     position: relative;
 }
-main .news_all .news_wrap .news_container .news:hover {
+#wrap main .news_all .news_wrap .news_container .news:hover {
     border: 1px solid #0000ff; /* 마우스를 올리면 파란색이 되게 하는 기능,  아무데나 마우스를 올려도 파란색으로 변하는지 보기 */
 }
-main .news_all .news_wrap .news_container .news a {
+#wrap main .news_all .news_wrap .news_container .news a {
 }
-main .news_all .news_wrap .news_container .news a p {
+#wrap main .news_all .news_wrap .news_container .news a p {
 }
-main .news_all .news_wrap .news_container .news a p img {
+#wrap main .news_all .news_wrap .news_container .news a p img {
 }
-main .news_all .news_wrap .news_container .news a h3 {
+#wrap main .news_all .news_wrap .news_container .news a h3 {
     font-size: 1.125rem;
     font-weight: 600;
     margin-top: 20px;
     margin:20px;
 }
-main .news_all .news_wrap .news_container .news .date {
+#wrap main .news_all .news_wrap .news_container .news .date {
     font-size:0.875em;
     position: absolute;
     bottom: 20px; left: 20px;
 }
 /*  ======================================================= 뉴스 공지사항 버튼  */
-main .news_all .news_wrap .news_btn {
+#wrap main .news_all .news_wrap .news_btn {
     text-align: center;
     margin-bottom: 20px
 }
-main .news_all .news_wrap .news_btn #news_prev {
+#wrap main .news_all .news_wrap .news_btn #news_prev {
     margin-right: 10px;
 }
-main .news_all .news_wrap .news_btn #news_prev img {}
-main .news_all .news_wrap .news_btn #news_next {
+#wrap main .news_all .news_wrap .news_btn #news_prev img {}
+#wrap main .news_all .news_wrap .news_btn #news_next {
     transform: scaleX(-1);
 }
-main .news_all .news_wrap .news_btn #news_next img {}
+#wrap main .news_all .news_wrap .news_btn #news_next img {}
 /* ========================================================================= 뉴스 더보기 */
-main .news_all .all_news {
-    border:1px solid #000;
-    padding: 20px 80px;
+#wrap main .news_all .all_news {
+    border:1px solid #aaa;
+    padding: 20px 60px;
     display: inline-block;
-    width: max-content; margin:20px auto;
+    width: max-content; margin:20px auto; /* 너비는 내용만큼 인식하자 -> width: max-content; */
 }
-main .news_all .all_news img {
+#wrap main .news_all .all_news img {
     top: 3px;
     position: relative; 
 
 
 }
-main .news_all .all_news em {
+#wrap main .news_all .all_news em {
     font-size: 1rem;
     font-weight: 600;
     
 }
 /* =======================================================================all_news 버튼 hover 효과모음 */
 /* hover 라고 선택자를 하나만 쓰는 건 아니다. 디자인에 따라 추가할수 있음 */
-main .news_all .all_news:hover {
+#wrap main .news_all .all_news:hover {
     
     background-color: #000;
 }
-main .news_all .all_news:hover img {
+#wrap main .news_all .all_news:hover img {
     filter: invert(100%);
 }
-main .news_all .all_news:hover em{
+#wrap main .news_all .all_news:hover em{
+    color: #fff;
+}
+/* ======================================================================== 3. 삼립 스튜디오 */
+#wrap main .studio_wrap {
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+#wrap main .studio_wrap h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;    
+    line-height: 150%;
+}
+#wrap main .studio_wrap p {
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+/* ======================================================================== 3. 삼립 스튜디오  - 유투브 채널 미리보기 */
+#wrap main .studio_wrap .studio_list {
+    margin: 80px auto;
+    width: 1370px; /* height: 562px; 높이값은 지금은 필요는 없음*/
+    display: flex; flex-flow: row wrap; /* 줄바꿈이 되서 정렬해야하니깐 row wrap으로 설정한것  */
+    justify-content: space-between; /* 양쪽 끝으로 배치해야하니깐 */
+    background-color: #0000ff;
+}
+#wrap main .studio_wrap .studio_list a{
+    margin-bottom: 50px;
+}
+
+#wrap main .studio_wrap .studio_list a img{
+    width: 312px; height: 176px;
+
+}
+#wrap main .studio_wrap .studio_list a img:nth-of-type(4){
+
+}
+/* ======================================================================== 3. 삼립 스튜디오  - 유트블 채널 OPEN 영역 */
+#wrap main .studio_wrap .studio_open {
+    background-color: rgba(0,0,0,0.8);
+    /* 왼쪽 위에서 시작으로 오른쪽 하단으로 형태 (absolute쓸 때는 좌표값 꼭 쓰기) */
+    position:absolute; left:0; top:0;
+    /* absolute가 적용된 대상은 그 대상이 block이어도 자동으로 inline-block처럼 자식의 내용만큼만 크기를 인식하기 때문에 별도의 width 크기를 반드시 설정해야 한다. (fixed 동일) */
+    width: 100%; height: 100vh; /*  height:100% 라고 작성시 -> 부모만큼만 사이즈가 들어감 */
+    display: none; /*초기 숨기기 설정 */
+}
+#wrap main .studio_wrap .studio_open .open_container {
+    /* background-color: aqua; */
+    /* border: 5px solid red;  테스트용 border */
+    height: 100%; /* 높이를 부모만큼 값을 주기 */
+    display: flex; flex-flow: column nowrap; /* flex-flow 로 수직으로 만들어주기 */
+    /* 메인축 정렬은 -> justify-content: center;   /   교차축 정렬은 -> align-items:center; */
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: center; /* 수평 가운데 정렬  */
+}
+#wrap main .studio_wrap .studio_open .open_container .close {
+    color: fff;
+    width: 900px; text-align: right; /* 동일한 너비 900px에서 x자 표시 글자가 오른쪽으로 이동해야하니깐 text-align:right로 설정했음 */
+    
+}
+#wrap main .studio_wrap .studio_open .open_container .youtube{
+    background-color: aquamarine;
+}
+#wrap main .studio_wrap .studio_open .open_container .youtube iframe{
+    display: none; /* 모두 숨기기 */
+     width: 900px;  /*너비 설정하기  -> 만약에 너비를 700px로 설정하면 상하가 짤리는 현상이 나타남 */
+}
+#wrap main .studio_wrap .studio_open .open_container .youtube iframe:first-child { /* 첫번째 영상만 보이게 하고 싶으면 수열선택자 만들고 display:block 처리하기 */
+    display: block; 
+    margin:0 auto;
+}
+/* ======================================================================== 3. 삼립 스튜디오  - (고정) 하단 링크 */
+#wrap main .studio_wrap .youtube_link {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    border:1px solid #aaa;
+    padding: 20px 60px;
+    display: inline-block;
+    width: max-content; margin:20px auto; /* 너비는 내용만큼 인식하자 -> width: max-content; */
+}
+#wrap main .studio_wrap .youtube_link img {
+    top :3px;
+    position: relative;
+}
+#wrap main .studio_wrap .youtube_link em {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+/* ======================================================================== 3. 삼립 스튜디오  - (고정) 하단 링크 (hover) */
+#wrap main .studio_wrap .youtube_link:hover {
+    background-color: #000;
+}
+#wrap main .studio_wrap .youtube_link:hover img {
+    filter: invert(100%);
+}
+#wrap main .studio_wrap .youtube_link:hover em {
     color: #fff;
 }

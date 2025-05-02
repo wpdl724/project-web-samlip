@@ -1,15 +1,18 @@
 /* index, 모든 sub 적용할 공통 header, footer common.css */
 #wrap {}
 #wrap header {
-    position:relative;/* lnb_bg의 부모 위치 기준 설정 */
+    /* position: relative; 설정했다가 헤더부분이 계속 고정되게 하고싶으면 fixed로 설정하면 됨*/
+    position:fixed;/* lnb_bg의 부모 위치 기준 설정 */  
+    z-index:900; /* z-index:;는 -1~999에서 작성가능 , 단위없고 중첩순서만 결정하는 position 선택속성이다/// 헤더부분이니깐 제일큰 900~999사이의 값을 쓰면 된다 */
     /* background-color:aqua; */
-    height:92px;
+    width: 100%; height:92px;
     padding:0 60px;
     /* container(header) item(h1, nav, right_menu)  */
     display:flex;
     flex-flow:row nowrap;
     justify-content:space-between;
     align-items:center;
+    background-color: #fff;
 }
 #wrap header h1 {}
 #wrap header h1 a {}
